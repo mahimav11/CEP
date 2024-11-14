@@ -1,0 +1,120 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f7f7f7;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+}
+/* Header container with limited width */
+.header-container {
+    justify-content: center; /* Centers the header */
+    background-color: #145faf;
+    padding: 0;
+    position: relative;
+    width: 100%;
+    align-items: center;
+    margin:180px auto 10px;
+    border-bottom: 4px solid #b0afff
+}
+
+/* Content inside the header */
+.header-content {
+    width: auto;
+    max-width: 1200px; /* Adjust the width to your original requirement */
+    text-align: center;
+    position: relative;
+}
+/* H1 styling */
+h1 {
+    font-size: 2.5rem;
+    color: white;
+    padding: 20px;
+    margin: 0;
+}
+/* Form Container */
+.form-popup {
+    background-color: #ffffff;
+    border: 1px solid #ddd;
+    padding: 20px;
+    border-radius: 10px;
+    width: 450px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Form Heading */
+.form-popup h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+/* Input Fields */
+.form-popup input[type="text"],
+.form-popup input[type="email"],
+.form-popup input[type="password"],
+.form-popup select {
+    width: 95%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+/* Labels */
+.form-popup label {
+    font-weight: bold;
+    display: block;
+    margin-bottom: 5px;
+    color: #555;
+}
+
+/* Submit Button */
+.form-popup button[type="submit"] {
+    width: 100%;
+    background-color: #201ebb;
+    color: white;
+    padding: 12px;
+    margin-top: 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.form-popup button[type="submit"]:hover {
+    background-color: #001b66;
+}
+
+/* Additional Fields (initially hidden) */
+#studentFields,
+#staffFields {
+    display: none;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    .form-popup {
+        width: 100%;
+        padding: 15px;
+    }
+}
+footer {
+    background-color: #145faf;
+    padding: 20px;
+    text-align: center;
+    color: white;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    margin:20px auto 20px;
+}
+
+footer p {
+    font-size: 1rem;
+}

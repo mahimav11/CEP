@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+    <link rel="stylesheet" href="register.css">
+</head>
+<body>
+    <header class="header-container">
+        <div class="header-content">
+            <h1>Campus Care Registration</h1>
+            <!-- Curved SVG Line inside the header -->
+           
+        </div>
+    </header>
+    <div class="form-popup">
+        <h2>Registration Form</h2>
+
+        <!-- Basic Details -->
+        <form id="registrationForm" action="register.php" method="POST">
+            <!-- Form fields here -->
+            
+        
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required>
+            <span id="toggle-password">&#128065;</span> <!-- Eye icon for visibility toggle -->
+            
+            <!-- Role Selection -->
+            <label for="role">Role:</label>
+            <select id="role" name="role" onchange="showAdditionalFields()" required>
+                <option value="">Select Role</option>
+                <option value="student">Student</option>
+                <option value="staff">Staff</option>
+                <option value="admin">Admin</option>
+            </select>
+
+            <!-- Stream Selection -->
+            <div id="streamField">
+                <label for="stream">Stream:</label>
+                <select id="stream" name="stream" required>
+                    <option value="">Select Stream</option>
+                    <option value="Engineering">Engineering</option>
+                    <option value="Polytechnic">Polytechnic</option>
+                    <option value="Pharmacy">Pharmacy</option>
+                    <option value="Senior">Senior College</option>
+                    <option value="Junior">Junior College</option>
+                </select>
+            </div>
+
+            <!-- Department (only visible for Engineering and Polytechnic streams) -->
+            <div id="departmentField" style="display:none;">
+                <label for="department">Department:</label>
+                <select id="department" name="department">
+                    <option value="">Select Department</option>
+                    <option value="CS">Computer Science</option>
+                    <option value="IT">Information Technology</option>
+                    <option value="Mechanical">Mechanical Engineering</option>
+                    <option value="Civil">Civil Engineering</option>
+                </select>
+            </div>
+
+            <!-- Class (for Students only) -->
+            <div id="studentFields" style="display:none;">
+                <label for="class">Class:</label>
+                <input type="text" id="class" name="class">
+            </div>
+
+            <!-- Designation (for Staff only) -->
+            <div id="staffFields" style="display:none;">
+                <label for="designation">Designation:</label>
+                <input type="text" id="designation" name="designation">
+            </div>
+
+            <!-- Submit Button -->
+            <button type="submit">Register</button>
+        </form>
+    </div>
+    
+    <footer>
+        <p>&copy; 2024 Campus Care | All Rights Reserved</p>
+    </footer>
+    <script src="register.js"></script>
+</body>
+</html>

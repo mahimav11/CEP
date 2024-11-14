@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Campus Care - Home</title>
+    <link rel="stylesheet" href="home.css"> <!-- Link to the updated CSS -->
+    <link rel="stylesheet" href="navbar.css">
+    <link href="https://fonts.googleapis.com/css2?family=Algerian&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <!-- Navbar Section -->
+    <header>
+        <div class="logo">
+            <img src="logo.png" alt="Institute Logo"> <!-- Ensure logo.png path is correct -->
+            <span class="college-name">Sanjivani</span>
+        </div>
+        <nav class="tabs">
+            <a href="home.html" id="home-tab">Home</a>
+            
+            <a href="complain.html" id="complain-tab">Log Complain</a>
+            <a href="track.html" id="track-tab">Track Progress</a>
+            <a href="about.html" id="about-tab">About Us</a>
+        </nav>
+    </header>
+
+    <!-- Home Content -->
+    <div class="home-content">
+        <!-- College Image -->
+        <img src="college.jpg" alt="College" class="college-image">
+        
+        <!-- Ongoing Developments Button -->
+        <button id="ongoingDevelopmentsBtn" onclick="showDevelopments()">Ongoing Developments</button>
+        
+        <!-- Cards for Developments (Initially Hidden) -->
+        <div id="developments" class="developments-cards" style="display:none;">
+            <div class="card">
+                <img src="hostel.jpg" alt="Girls Hostel">
+                <h3>Girls Hostel</h3>
+                <p>Construction of the new Girls Hostel is in progress.</p>
+            </div>
+            <div class="card">
+                <img src="banquet.jpg" alt="Banquet Hall">
+                <h3>Banquet Hall</h3>
+                <p>Banquet Hall construction is underway.</p>
+            </div>
+            <div class="card">
+                <img src="university.jpg" alt="University Building">
+                <h3>University Building</h3>
+                <p>The Sanjivani University building is under construction.</p>
+            </div>
+        </div>
+    </div>
+
+    <script src="on.js"></script>
+</body>
+</html>

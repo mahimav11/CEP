@@ -1,0 +1,104 @@
+/* Reset margins and paddings */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #ffffff;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* Header container with limited width */
+.header-container {
+    justify-content: center; /* Centers the header */
+    background-color: #145faf;
+    padding: 0;
+    position: relative;
+    border-bottom: 4px solid #b0afff
+}
+
+/* Content inside the header */
+.header-content {
+    width: auto;
+    max-width: 1200px; /* Adjust the width to your original requirement */
+    text-align: center;
+    position: relative;
+}
+/* H1 styling */
+h1 {
+    font-size: 2.5rem;
+    color: white;
+    padding: 20px;
+    margin: 0;
+}
+
+/* Container styling */
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px;
+    margin: auto;
+    max-width: 1200px;
+    width: 100%;
+    flex-grow: 1;
+}
+
+/* Left content styling (Logo on the left) */
+.left-content {
+    flex-basis: 40%;
+    text-align: left;
+}
+
+/* Right content styling (Buttons on the right) */
+.right-content {
+    flex-basis: 40%;
+    text-align: right;
+}
+
+/* Logo styling */
+.logo {
+    width: 400px; /* Adjusted the size */
+    height: 400px;
+    margin: 1px 50px;
+}
+
+/* Button styling */
+.btn {
+    display: block;
+    width: 200px;
+    margin-bottom: 20px;
+    padding: 15px;
+    background-color: #145faf;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.btn:hover {
+    background-color: #5689be;
+}
+
+/* Footer styling */
+footer {
+    background-color: #145faf;
+    padding: 20px;
+    text-align: center;
+    color: white;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+footer p {
+    font-size: 1rem;
+}

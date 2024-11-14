@@ -1,0 +1,111 @@
+
+
+/* Header Section */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color:  #160c4e;; /* Header background color */
+    color: white;
+    position: fixed;
+    top: 0;
+    margin-right: 30px;
+    width: 100%;
+    z-index: 1000;
+    height: 80px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+}
+
+/* Logo Styling */
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.logo img {
+    height: 100px;
+    width: auto;
+}
+
+.college-name {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: white;
+}
+
+/* Tabs Section Styling */
+nav.tabs {
+    display: flex;
+    gap: 5px;
+    tab-size: 10px;
+    justify-content: flex-start;
+}
+
+nav.tabs a {
+    color: rgb(2, 0, 114);
+    text-decoration: none;
+    padding: 10px 20px;
+    background-color: #ffffff;; /* Tab background color */
+    border-radius: 5px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    font-weight: bold;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    gap: 2px;
+    margin-right: 25px;
+}
+
+nav.tabs a::before {
+    content: '';
+    position: absolute;
+    width: 90%;
+    height: 3px;
+    background-color: rgb(167, 195, 255);
+    bottom: 0;
+    left: -100%;
+    transition: all 0.3s ease;
+}
+
+nav.tabs a:hover::before {
+    left: 0;
+}
+
+nav.tabs a:hover {
+    background-color: #97b0f3; /* Hover effect */
+    transform: scale(1.00);
+}
+
+/* Active Tab Styling */
+nav.tabs a.active {
+    background-color: #b7d2ec;
+    font-weight: bold;
+}
+
+/* Notification Icon Styling */
+
+.notification-icon img {
+    height: 30px;
+    width: 30px;
+    cursor: pointer;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    nav.tabs {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav.tabs a {
+        margin-bottom: 10px;
+    }
+}
